@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tic Tac Toe</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body">
+	<section class="playground">
+		<section class="players-info">
+			<form class="players-form">
+				<fieldset class="players-form__field">
+					<label>
+						<h2 class="h2 players-form__h2">First player:</h2>
+						<input type="text" class="players-form__name-input" name="first" placeholder="name" required data-active="true">
+					</label>
+					<label class="players-form__label-second-player">
+						<h2 class="h2 players-form__h2">Second player:</h2>
+						<input type="text" class="players-form__name-input" name="second" placeholder="name" required data-active="true">
+					</label>
+					<label>
+						<input type="checkbox" class="players-form__checkbox" name="AI">
+						<h3 class="h3 players-form__h3">Play versus AI</h3>
+					</label>
+				</fieldset>
+				<button class="gameloop-button players-form_margin_top" type="button" data-action='start'>Start</button>
+			</form>
+		</section>
+		<section class="gameboard">
+			<table class="board-table">
+				<tbody class="board-table__tbody">
+					<tr class="board-table__tbody-tr">
+						<td class="board-table__td"></td>
+						<td class="board-table__td"></td>
+						<td class="board-table__td"></td>
+					</tr>
+					<tr class="board-table__tbody-tr">
+						<td class="board-table__td"></td>
+						<td class="board-table__td"></td>
+						<td class="board-table__td"></td>
+					</tr>
+					<tr class="board-table__tbody-tr">
+						<td class="board-table__td"></td>
+						<td class="board-table__td"></td>
+						<td class="board-table__td"></td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="cross cross_display_none">
+				<div class="cross__line cross__line_digonal_left"></div>
+				<div class="cross__line cross__line_digonal_right"></div>
+			</div>
+
+			<div class="circle circle_display_none">
+				<div class="circle__instance"></div>
+			</div>
+		</section>
+		<button class="gameloop-button players-form_margin_top" type="button" data-action='restart'>Restart</button>
+	</section>
+	<script src="javascript/gameLoop.js"></script>
+	<script src="javascript/players.js"></script>
+	<script src="javascript/gameBoard.js"></script>
+</body>
+</html>
