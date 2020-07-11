@@ -1,2 +1,4 @@
 # TheOdinProject-TicTacToe-
-Tic Tac Toe game
+
+#Live view:
+https://danylmatviyenko.github.io/TheOdinProject-TicTacToe-/
