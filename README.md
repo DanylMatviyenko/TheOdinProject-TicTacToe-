@@ -1,4 +1,4 @@
 # TheOdinProject-TicTacToe-
 
-#Live view:
+# Live view:
 https://danylmatviyenko.github.io/TheOdinProject-TicTacToe-/
